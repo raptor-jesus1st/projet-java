@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageViewItemVote"
+        android:layout_width="0sp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0sp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="20sp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewItemPosition"
+            android:layout_width="match_parent"
+            android:textSize="24sp"
+            android:layout_marginBottom="10sp"
+            android:layout_height="wrap_content"
+            android:text="Pour" />
+
+        <TextView
+            android:id="@+id/textViewItemVoteTitre"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="legaliser la pedophilie" />
+
+        <TextView
+            android:id="@+id/textViewItemVoteDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="31/02/2000" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/imageViewDeputy"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewDeputyName"
+                android:layout_width="match_parent"
+                android:textSize="28dp"
+                android:layout_height="wrap_content"
+                android:text="Prénom Nom" />
+
+            <TextView
+                android:id="@+id/textViewDeputyCirco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Dept, Circonscription" />
+            <TextView
+                android:id="@+id/textViewDeputyGroupe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Groupe" />
+            <TextView
+                android:id="@+id/textViewDeputyEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email@toto.fr" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listViewMainVote"
+        android:layout_margin="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_votes"/>
+
+
+</LinearLayout>
